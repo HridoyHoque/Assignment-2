@@ -1,34 +1,80 @@
 * {
     margin: 0;
     padding: 0;
+   
 }
 
-/* ---------------
+/*===================
 Common styles
 ================= */
 
-.container{
+.container {
     width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-header{
-
-background-color:  rgba(255, 144, 14, 0.1);
+   max-width: 1140px;
+    margin: auto;
 }
 
 .section-title {
     color: #131313;
     font-weight: 700;
+    line-height: 53px;
     font-size: 45px;
 }
 
-.navbar {
+.section-text {
 
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+}
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.primary-color {
+    color: #727272;
+}
+
+.secondary-color {
+    color: #FF900E;
+}
+
+.title-padding {
+    padding-bottom: 24px;
+}
+
+.padding-text {
+    padding-top: 24px;
+}
+
+.padding-text {
+    padding-top: 10px;
+}
+
+/*================================
+        this is nav area start 
+   =================================*/
+
+header {
+
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
+    align-items: center;
 
 }
 
@@ -39,6 +85,7 @@ background-color:  rgba(255, 144, 14, 0.1);
     list-style: none;
 
 }
+
 .navbar>li {
     font-weight: 500;
     font-size: 18px;
@@ -46,7 +93,331 @@ background-color:  rgba(255, 144, 14, 0.1);
 
 }
 
-.navbar> ul a{
+.navbar>ul a {
     text-decoration: none;
 
 }
+
+/*===================================
+        End of nav area
+  ===============================*/
+
+/*======================================
+       Landing page area start
+    =======================================-*/
+
+.landing-page {
+    padding-top: 100px;
+    padding-bottom: 45px;
+}
+
+.landing-page-content {
+    text-align: center;
+
+}
+
+.page-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: #131313;
+    padding-bottom: 30px;
+}
+
+.page-banner img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+/*===================================
+      End of landing page area
+   ==================================*/
+
+/*===================================
+      Quick list area start
+   ==================================*/
+
+.quick-list-area {
+
+    display: flex;
+    padding-top: 85px;
+    padding-bottom: 130px;
+    width: 100%;
+}
+
+.photo-galleries {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 570px;
+    width: 100%;
+}
+
+.photo-galleries img {
+    width: 100%;
+    height: 100%;
+}
+
+.quick-lists {
+    width: 100%;
+    max-width: 570px;
+    padding-left: 73px;
+    margin-top: 130px;
+}
+
+/*===================================
+      Quick list area End
+   ==================================*/
+
+/*===================================
+     More Feature area start
+   ==================================*/
+
+.features-area {
+    display: flex;
+}
+
+.features-content {
+    width: 100%;
+    max-width: 500px;
+    flex-shrink: 0;
+}
+
+.feature-right {
+    width: 100%;
+    max-width: 570px;
+    text-align: right;
+}
+
+.border-left {
+    border-left: #FF900E solid 5px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+.feature-all {
+    padding-top: 30px;
+}
+
+.feature {
+    margin-bottom: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px 30px;
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #131313;
+}
+
+.feature-image img {
+    width: 85%;
+    height: 100%;
+    overflow: hidden;
+    position: static;
+}
+
+.year {
+    width: 300px;
+    height: 180px;
+    background: #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    top: -77px;
+    left: 21px;
+    align-items: center;
+}
+
+.year h3 {
+    font-size: 65px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-top: 2rem;
+}
+
+.year p {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/*===================================
+     More Feature area End
+   ==================================*/
+
+/*===================================
+     Facts area Start
+   ==================================*/
+
+.fact-area {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.facts {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.fact {
+    height: 240px;
+    width: 240px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.fact:hover {
+    transform: rotate(4deg);
+    transition: .5s;
+}
+
+.fact img {
+    height: 45px;
+    width: 45px;
+    padding-top: 45px;
+}
+
+.fact h3 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #424242;
+    padding-top: 10px;
+}
+
+.fact p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #727272;
+    padding-top: 5px;
+}
+
+/*===================================
+     Facts area End
+   ==================================*/
+
+   .sponspors-area{
+    padding-top: 50px;
+    padding-bottom: 130px;
+}
+.sponspors-top{
+    text-align: center;
+}
+.sponspors-logo{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.sponspors-logo img{
+    width: 165px;
+    height: 50px;
+
+}
+
+/*===================================
+     Footer area start
+   ==================================*/
+
+   footer{
+    background-color: #FFF4E7;
+}
+.footer{
+    text-align: center; 
+}
+.footer-text{
+    font-size: 20px;
+    font-weight: 400;
+    color: #424242;
+    padding: 30px 0;
+}
+
+/*===================================
+     Footer area End
+   ==================================*/
+
+
+   /*===================================
+     //Mobile Responsive Area//
+   ==================================*/
+
+   @media only screen and (max-width:576px) {
+   
+    .container{
+        width: 100%;
+        max-width: 576px;
+    }
+
+    /* =====
+    navbar area
+    =============*/
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 25px;
+    }
+    .navbar >ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* =============
+   landing page area
+    ==================*/
+    .page-banner{
+        text-align: center;
+    }
+    .page-banner img{
+        width: 90%;
+    }
+
+    /* ===============
+   quick list area
+    =====================*/
+    .quick-list-area{
+        flex-direction: column;
+        
+    }
+    .photo-galleries{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .quick-lists{
+        padding-left: 0;
+        text-align: center;
+        padding-bottom: 30px;
+     
+    }
+
+    /* ============
+     features area
+    ================== */
+    .features-area{
+        flex-direction: column;
+    }
+    .feature-top{
+        text-align: center;
+    }
+
+    /* ==============
+     facts area
+    =================== */
+    .fact-area{
+        text-align: center;
+    }
+    .facts{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* ==========
+     sponspore area
+    =================== */
+    .sponspors-logo{
+        flex-wrap: wrap;
+    }
+    .contact-right{
+        padding-top: 30px;
+    }
+   }
